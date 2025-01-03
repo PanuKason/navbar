@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ตะกร้าสินค้า</title>
+    <style>
+        body {
+            background-image: url(b2.gif); /* พื้นหลัง */
+            background-size: cover;
+            color: #ffffff;
+            min-height: 100vh;
+            margin: 0;
+            
+        }
+        th{
+            border: 100px;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: medium;
+            text-shadow: 
+              1px 1px 0px black,  /* เงาด้านขวาล่าง */
+              1px 1px 0px black, /* เงาด้านซ้ายล่าง */
+              1px 1px 0px black, /* เงาด้านขวาบน */
+              1px 1px 0px black; /* เงาด้านซ้ายบน */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">ตะกร้าสินค้า</h1>
+        <div class="overflow-x-auto">
+            <table class="table w-full">
+                <!-- หัวตาราง -->
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>สินค้า</th>
+                        <th>ราคา</th>
+                        <th>จำนวน</th>
+                        <th>รวม</th>
+                        <th>การจัดการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- รายการสินค้า -->
+                    <tr>
+                        <th>1</th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="mask mask-squircle w-12 h-12">
+                                        <img src="https://via.placeholder.com/150" alt="Game 1" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="font-bold">เกม 1</div>
+                                    <div class="text-sm opacity-50">คำอธิบายเกม</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>฿500</td>
+                        <td>
+                            <input type="number" class="input input-bordered w-16" value="1" />
+                        </td>
+                        <td>฿500</td>
+                        <td>
+                            <button class="btn btn-error btn-xs">ลบ</button>
+                        </td>
+                    </tr>
+                    <!-- สามารถเพิ่มรายการอื่นๆ ได้ -->
+                </tbody>
+                <!-- รวมทั้งหมด -->
+                <tfoot>
+                    <tr>
+                        <th colspan="4" class="text-right" >รวมทั้งหมด:</th>
+                        <th>฿500</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div><br><br><br><br><br><br>
+        <!-- ปุ่มดำเนินการ -->
+        <div class="mt-6 flex justify-between">
+            <a href="index.html" class="btn btn-secondary">เลือกสินค้าเพิ่มเติม</a>
+            <button class="btn btn-primary">ดำเนินการชำระเงิน</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>โปรไฟล์</title>
+    <style>
+        body {
+            background-image: url(b2.gif); 
+            background-size: cover;
+            color: #010101;
+            min-height: 100vh;
+            margin: 0;
+            border: 100;
+            text-shadow: 100px;
+        }
+        h2 {
+            color: aliceblue;
+            text-shadow: #010101;
+        }
+        tr {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-6">
+        <div class="card lg:card-side bg-base-100 shadow-xl">
+            <!-- ส่วนรูปภาพโปรไฟล์ -->
+            <figure>
+                <img src="https://pbs.twimg.com/media/EaDdFuLUMAA5bzw.jpg" alt="Profile Picture" class="rounded-full w-40 h-40 m-6" />
+            </figure>
+            <div class="card-body">
+                <!-- ชื่อและข้อมูลพื้นฐาน -->
+                <h2 class="card-title text-3xl font-bold">ชื่อผู้ใช้: John Doe</h2>
+                <p>อีเมล: Panu123@gmail.com</p>
+                <p>เบอร์โทร: 000-000-0000</p>
+                <p>ที่อยู่: 123 หมู่ 4 ถนนสายหลัก แขวง/ตำบล เขต/อำเภอ จังหวัด</p>
+
+                <!-- ปุ่มจัดการโปรไฟล์ -->
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">แก้ไขโปรไฟล์</button>
+                    <button class="btn btn-error" onclick="document.location='navbar.html'">กลับ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- รายการคำสั่งซื้อ -->
+        <div class="mt-10">
+            <h2 class="text-2xl font-bold mb-4">คำสั่งซื้อที่ผ่านมา</h2>
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                    <!-- หัวตาราง -->
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>ชื่อสินค้า</th>
+                            <th>ราคา</th>
+                            <th>สถานะ</th>
+                            <th>วันที่สั่งซื้อ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- รายการคำสั่งซื้อ -->
+                        <tr>
+                            <th>1</th>
+                            <td>เกม A</td>
+                            <td>฿500</td>
+                            <td class="text-green-600">จัดส่งแล้ว</td>
+                            <td>01/01/2025</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>เกม B</td>
+                            <td>฿700</td>
+                            <td class="text-yellow-600">กำลังดำเนินการ</td>
+                            <td>02/01/2025</td>
+                        </tr>
+                        <!-- เพิ่มรายการเพิ่มเติมได้ -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

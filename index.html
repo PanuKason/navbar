@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(b2.gif); /* ไล่สีจากน้ำเงินอ่อนไปฟ้า */
+            background-size: cover;
+            color: #000000;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังโปร่งใสเล็กน้อย */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #000; /* เปลี่ยนสีข้อความใน navbar ให้ดูชัด */
+            border: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>1</a></li>
+                            <li><a>2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl" href="navbar.html">ALLAIN</a>
+        </div>
+        
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>เกม</a></li>
+                <li>
+                    <details>
+                        <summary>หมวดหมู่ </summary>
+                        <ul class="p-2">
+                            <li><a href="index.html"> 1</a></li>
+                            <li><a href="sell.html"> 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="sell.html">ตะกร้าสินค้า</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component" src="https://s.isanook.com/ga/0/ud/213/1066627/image-rov-09.jpg" />
+                    </div>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between" href="pro.html">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">ALLAIN Shop</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- สินค้า 1 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://cdn.oneesports.co.th/cdn-data/sites/3/2024/10/462535805_1710637166359519_7590291455119289491_n.png" alt="Game Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Rov</h2>
+                    <p class="text-gray-600">เกมป้องกันฐานเล่น5คนมีตำแหน่งเฉพาะตัว เช่น ป่า แครี่ เมจ แทงค์ ทุกตำแหน่งมีหน้าที่ของตัวเอง ป่าตัวดำเนินเกม แครี่แบกเลทเกมตีป้อม เมจทำดามเมจตัวเลือด แมงค์รับดามเมจให้ทีม </p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-blue-500">฿500</span>
+                        <button class="btn btn-primary"onclick="document.location='sell.html'">ซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- สินค้า 2 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter" alt="Game Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">roblox blox fruit</h2>
+                    <p class="text-gray-600">Blox Fruitsเป็น เกม Robloxที่ได้รับแรงบันดาลใจจาก One Piece โดยให้โอกาสในการสำรวจท้องทะเลและเกาะต่างๆ คุณสามารถเลือกที่จะเป็นผู้ใช้ "ผลปีศาจ" หรือ ปืน เพื่อรับพลังพิเศษหรือเลือกดาบเพื่อเป็นนักดาบที่ชำนาญ</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-blue-500">฿750</span>
+                        <button class="btn btn-primary" onclick="document.location='sell.html'">ซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- สินค้า 3 -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://cdn1.epicgames.com/spt-assets/edaff839f0734d16bc89d2ddb1dc9339/steel-magnolia-15owu.jpg" alt="Game Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">God of War</h2>
+                    <p class="text-gray-600">God of War ได้รับการยกย่องอย่างกว้างขวางจากเนื้อเรื่อง การออกแบบโลก การกำกับศิลป์ ดนตรี กราฟิก ระบบการต่อสู้ และตัวละคร โดยเฉพาะอย่างยิ่งไดนามิกส์ระหว่างเครโทสและเอทรีอัส นักวิจารณ์หลายคนกล่าวว่าตัวเกมประสบความสำเร็จในการฟื้นฟูซีรีส์โดยไม่สูญเสียเอกลักษณ์หลักของเกมรุ่นก่อน ตัวเกมได้รับคะแนนรีวิวที่สมบูรณ์แบบจำนวนหนึ่ง</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-lg font-bold text-blue-500">฿600</span>
+                        <button class="btn btn-primary"onclick="document.location='sell.html'">ซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
